@@ -29,13 +29,13 @@ Pound.grid(column = 0, row = 3)
 lbl.grid()
 
 # function to get weight in metric form
-def metric_pound():
+def metric_weight():
   get_weight = int(Pound.get())
   weight_kg = get_weight * 0.45
   return weight_kg
 
 #function to get height in metric form
-def met_height():
+def metric_height():
   get_feet = int(Feet.get())
   height_inch = get_feet * 12
   get_inches = int(Inch.get())
@@ -46,8 +46,8 @@ def met_height():
 
 #function to calculate bmi
 def cal_bmi():
- bmi_weight = metric_pound()
- bmi_height = met_height()
+ bmi_weight = metric_weight()
+ bmi_height = metric_height()
  bmi = bmi_weight / bmi_height
   
  if (bmi < 18.5):
